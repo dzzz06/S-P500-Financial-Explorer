@@ -1,32 +1,40 @@
-# 📊 S&P 500 Financial Explorer / 标普500财务分析器
+# 📊 S&P 500 Financial Explorer
 
-A **Streamlit** application to explore financial indicators of S&P 500 companies, such as **P/E ratio, EPS, Market Cap, Dividend Yield**, and more.
-This app allows interactive filtering, visualization, and analysis to help identify **valuation differences across sectors** and potential **growth or overvalued stocks**.
+**Live Demo / 在线演示： [https://s-p500-financial-explorer-khuxwvnewf23f2gpg6d7q6.streamlit.app/](https://s-p500-financial-explorer-khuxwvnewf23f2gpg6d7q6.streamlit.app/)**
 
-一个 **Streamlit** 应用，用于分析标普500公司的财务指标，如 **市盈率 (P/E)、每股收益 (EPS)、市值 (Market Cap)、股息率 (Dividend Yield)** 等。
-该应用支持交互式筛选、可视化分析，帮助发现 **不同行业估值差异** 及潜在的 **成长型或高估股票**。
+探索 S&P 500 公司估值和行业差异，分析 P/E、EPS、Market Cap 等关键财务指标。  
+Explore valuation differences across S&P 500 companies and sectors by analyzing key financial indicators such as P/E, EPS, and Market Cap.
 
 ---
-🛠 Interactive Components / 功能组件说明
 
-Select Sector / 选择行业 (下拉菜单 selectbox)
-选择一个行业，筛选对应公司数据。
+## ⚡ Features / 功能特点
 
-Select P/E Range / 市盈率范围 (滑块 slider)
-调整 P/E 区间，动态过滤符合条件的公司。
+- **Interactive filtering by sector and P/E range / 通过行业和市盈率范围交互筛选**  
+- **Dynamic visualizations: Bar chart, Scatter plot, Boxplot / 动态可视化：柱状图、散点图、箱线图**  
+- **Filtered companies table with scrollable view / 可滚动查看筛选后的公司列表**  
+- **Compare industry P/E and identify potentially overvalued or growth stocks / 对比行业 P/E，发现可能高估或成长股**
 
-Choose Analysis Focus / 分析类型选择 (单选 radio)
-选择分析模式：
+---
 
-Industry P/E Comparison / 行业平均 P/E
+## 🛠 Interactive Components / 功能组件说明
 
-High P/E Evaluation / 高 P/E 股票评估
+- **Select Sector / 选择行业 (下拉菜单 selectbox)**  
+  Choose a sector to filter companies / 选择一个行业，筛选对应公司数据
 
-Filtered Companies Table / 筛选公司表格 (dataframe)
-展示公司名称、P/E、EPS、市值、股价、股息率。
+- **Select P/E Range / 市盈率范围 (滑块 slider)**  
+  Adjust P/E range to filter companies dynamically / 调整 P/E 区间，动态过滤公司
 
-Visualizations / 可视化图表 (柱状图、散点图、箱线图)
-分析行业估值趋势，发现潜在高估或成长股。
+- **Choose Analysis Focus / 分析类型选择 (单选 radio)**  
+  Select analysis mode:  
+  - Industry P/E Comparison / 行业平均 P/E  
+  - High P/E Evaluation / 高 P/E 股票评估
+
+- **Filtered Companies Table / 筛选公司表格 (dataframe)**  
+  Displays company name, P/E, EPS, Market Cap, Price, Dividend Yield / 显示公司名称、P/E、EPS、市值、股价、股息率
+
+- **Visualizations / 可视化图表**  
+  Analyze valuation trends and identify potential overvalued or growth stocks / 分析估值趋势，发现潜在高估或成长股
+
 
 💡 作用说明 / Purpose:
 这些组件实现了至少两个交互控件和动态数据分析，让用户可以实时探索行业与公司估值情况。
