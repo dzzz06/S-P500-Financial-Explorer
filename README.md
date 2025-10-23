@@ -7,6 +7,29 @@ This app allows interactive filtering, visualization, and analysis to help ident
 该应用支持交互式筛选、可视化分析，帮助发现 **不同行业估值差异** 及潜在的 **成长型或高估股票**。
 
 ---
+🛠 Interactive Components / 功能组件说明
+
+Select Sector / 选择行业 (下拉菜单 selectbox)
+选择一个行业，筛选对应公司数据。
+
+Select P/E Range / 市盈率范围 (滑块 slider)
+调整 P/E 区间，动态过滤符合条件的公司。
+
+Choose Analysis Focus / 分析类型选择 (单选 radio)
+选择分析模式：
+
+Industry P/E Comparison / 行业平均 P/E
+
+High P/E Evaluation / 高 P/E 股票评估
+
+Filtered Companies Table / 筛选公司表格 (dataframe)
+展示公司名称、P/E、EPS、市值、股价、股息率。
+
+Visualizations / 可视化图表 (柱状图、散点图、箱线图)
+分析行业估值趋势，发现潜在高估或成长股。
+
+💡 作用说明 / Purpose:
+这些组件实现了至少两个交互控件和动态数据分析，让用户可以实时探索行业与公司估值情况。
 
 ## 🗂 Project Structure / 项目结构
 

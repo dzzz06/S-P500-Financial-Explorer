@@ -18,6 +18,8 @@ to explore **valuation differences across industries** and identify **potentiall
 @st.cache_data
 def load_data():
     df = pd.read_csv("financials.csv")
+    # 清理列名空格，避免筛选报错
+    df.columns = df.columns.str.strip()
     return df
 
 df = load_data()
@@ -46,7 +48,12 @@ filtered = df[(df["Sector"] == sector) & (df["Price/Earnings"].between(pe_min, p
 
 st.subheader(f"📈 {sector} Sector Companies (P/E {pe_min:.1f}–{pe_max:.1f})")
 st.write(f"Number of companies: {len(filtered)}")
-st.dataframe(filtered[["Name", "Price/Earnings", "Earnings/Share", "Market Cap", "Price", "Dividend Yield"]].head())
+
+# ---- Display scrollable dataframe ----
+st.dataframe(
+    filtered[["Name", "Price/Earnings", "Earnings/Share", "Market Cap", "Price", "Dividend Yield"]],
+    height=450  # 设置表格高度，超出部分可滚动
+)
 
 # ---- Visualization ----
 st.header("📊 Visual Analysis")
