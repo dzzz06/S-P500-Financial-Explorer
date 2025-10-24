@@ -71,6 +71,8 @@ if analysis_type == "Industry P/E Comparison":
     **Interpretation:**  
     - Sectors with **higher average P/E** (e.g., Technology, Health Care) may reflect **strong growth expectations**.  
     - Lower P/E sectors (e.g., Energy, Financials) often represent **mature or cyclical industries**.
+    -The dataset was last updated in July 2020, right after the COVID-19 shock.The energy sector’s earnings were extremely low while stock prices started to recover, which pushed up the P/E ratio.
+    Therefore, the high P/E in the Energy sector reflects temporary earnings drops, not true growth potential.
     """)
 
 elif analysis_type == "High P/E Evaluation":
