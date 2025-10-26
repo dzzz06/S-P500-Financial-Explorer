@@ -43,10 +43,10 @@ Explore valuation differences across S&P 500 companies and sectors by analyzing 
 
 ```
 S&P500-Financial-App/
- ┣ app.py              # Main Streamlit application / 主应用文件
- ┣ financials.csv      # Dataset containing financial metrics / 财务数据 CSV
- ┣ requirements.txt    # Required Python packages / 依赖包列表
- ┗ README.md           # This file / 本文件
+ ┣ S&P500 Financial Explorer.py      # Main Streamlit application / 主应用文件
+ ┣ financials.csv                    # Dataset containing financial metrics / 财务数据 CSV
+ ┣ requirements.txt                  # Required Python packages / 依赖包列表
+ ┗ README.md                         # This file / 本文件
 ```
 
 ---
@@ -113,7 +113,7 @@ pip install -r requirements.txt
 3. **Run the Streamlit app / 运行 Streamlit 应用**
 
 ```bash
-streamlit run app.py
+streamlit run "S&P500 Financial Explorer.py"
 ```
 
 The app will open in your browser at `http://localhost:8501`.
